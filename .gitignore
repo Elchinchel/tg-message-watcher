@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*py.class
+
+# Packaging
+*.egg-info/
+
+# Environments
+/bin
+/lib
+/lib64
+/share
+/pyvenv.cfg
+/include
+
+# VS Code
+.vscode/
+
+# profiling
+*.prof
+
+# local folders
+/logs
+/storage
+
+config.json
+*.session
