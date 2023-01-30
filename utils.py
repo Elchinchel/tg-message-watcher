@@ -1,6 +1,7 @@
 import pickle
 import os.path
 
+from os import makedirs
 from typing import Generic, TypeVar
 from logging import getLogger, INFO
 from asyncio import get_running_loop, Lock
@@ -12,6 +13,7 @@ logger.setLevel(INFO)
 
 
 STORAGE_DIR = os.path.join(os.path.dirname(__file__), 'storage')
+makedirs(STORAGE_DIR, exist_ok=True)
 
 _DataType = TypeVar('_DataType')
 
